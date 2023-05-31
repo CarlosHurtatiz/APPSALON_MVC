@@ -22,11 +22,11 @@ class Email {
          // create a new object
          $mail = new PHPMailer();
          $mail->isSMTP();
-         $mail->Host = 'appsalon.elmaquetador.com';
+         $mail->Host = '';
          $mail->SMTPAuth = true;
          $mail->Port = 465;
-         $mail->Username = 'contacto@appsalon.elmaquetador.com';
-         $mail->Password = 'L9TzTfe-XN0t';
+         $mail->Username = 'correo@correo.com';
+         $mail->Password = 'mipass';
      
          $mail->setFrom('contacto@appsalon.elmaquetador.com');
          $mail->addAddress('contacto@appsalon.elmaquetador.com', 'AppSalon.elmaquetador.com');
@@ -53,11 +53,11 @@ class Email {
         // create a new object
         $mail = new PHPMailer();
         $mail->isSMTP();
-        $mail->Host = 'appsalon.elmaquetador.com';
+        $mail->Host = '';
         $mail->SMTPAuth = true;
         $mail->Port = 465;
-        $mail->Username = 'contacto@appsalon.elmaquetador.com';
-        $mail->Password = 'L9TzTfe-XN0t';
+        $mail->Username = 'correo@correo.com';
+        $mail->Password = 'mipass';
     
         $mail->setFrom('contacto@appsalon.elmaquetador.com');
         $mail->addAddress('contacto@appsalon.elmaquetador.com', 'AppSalon.elmaquetador.com');
