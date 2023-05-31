@@ -22,14 +22,14 @@ class Email {
          // create a new object
          $mail = new PHPMailer();
          $mail->isSMTP();
-         $mail->Host = 'smtp.mailtrap.io';
+         $mail->Host = 'appsalon.elmaquetador.com';
          $mail->SMTPAuth = true;
-         $mail->Port = 2525;
-         $mail->Username = '7ca97f489eb93e';
-         $mail->Password = '9f44105dde1e9b';
+         $mail->Port = 465;
+         $mail->Username = 'contacto@appsalon.elmaquetador.com';
+         $mail->Password = 'L9TzTfe-XN0t';
      
-         $mail->setFrom('cuentas@appsalon.com');
-         $mail->addAddress('cuentas@appsalon.com', 'AppSalon.com');
+         $mail->setFrom('contacto@appsalon.elmaquetador.com');
+         $mail->addAddress('contacto@appsalon.elmaquetador.com', 'AppSalon.elmaquetador.com');
          $mail->Subject = 'Confirma tu Cuenta';
 
          // Set HTML
@@ -38,7 +38,7 @@ class Email {
 
          $contenido = '<html>';
          $contenido .= "<p><strong>Hola " . $this->nombre .  "</strong> Has Creado tu cuenta en App Salón, solo debes confirmarla presionando el siguiente enlace</p>";
-         $contenido .= "<p>Presiona aquí: <a href='http://localhost:3000/confirmar-cuenta?token=" . $this->token . "'>Confirmar Cuenta</a>";        
+         $contenido .= "<p>Presiona aquí: <a href='https://appsalon.elmaquetador.com/confirmar-cuenta?token=" . $this->token . "'>Confirmar Cuenta</a>";        
          $contenido .= "<p>Si tu no solicitaste este cambio, puedes ignorar el mensaje</p>";
          $contenido .= '</html>';
          $mail->Body = $contenido;
@@ -53,14 +53,14 @@ class Email {
         // create a new object
         $mail = new PHPMailer();
         $mail->isSMTP();
-        $mail->Host = 'smtp.mailtrap.io';
+        $mail->Host = 'appsalon.elmaquetador.com';
         $mail->SMTPAuth = true;
-        $mail->Port = 2525;
-        $mail->Username = '7ca97f489eb93e';
-        $mail->Password = '9f44105dde1e9b';
+        $mail->Port = 465;
+        $mail->Username = 'contacto@appsalon.elmaquetador.com';
+        $mail->Password = 'L9TzTfe-XN0t';
     
-        $mail->setFrom('cuentas@appsalon.com');
-        $mail->addAddress('cuentas@appsalon.com', 'AppSalon.com');
+        $mail->setFrom('contacto@appsalon.elmaquetador.com');
+        $mail->addAddress('contacto@appsalon.elmaquetador.com', 'AppSalon.elmaquetador.com');
         $mail->Subject = 'Reestablece tu password';
 
         // Set HTML
@@ -69,7 +69,7 @@ class Email {
 
         $contenido = '<html>';
         $contenido .= "<p><strong>Hola " . $this->nombre .  "</strong> Has solicitado reestablecer tu password, sigue el siguiente enlace para hacerlo.</p>";
-        $contenido .= "<p>Presiona aquí: <a href='http://localhost:3000/recuperar?token=" . $this->token . "'>Reestablecer Password</a>";        
+        $contenido .= "<p>Presiona aquí: <a href='https://appsalon.elmaquetador.com/recuperar?token=" . $this->token . "'>Reestablecer Password</a>";        
         $contenido .= "<p>Si tu no solicitaste este cambio, puedes ignorar el mensaje</p>";
         $contenido .= '</html>';
         $mail->Body = $contenido;
